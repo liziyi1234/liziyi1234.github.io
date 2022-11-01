@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <script>
+    var number1=prompt('请输入第一个数的值');
+</script> -->
+<body>
+    <input type="text" id="input1" name="" value="0" onclick="setvalue1"/>+
+    <input type="text" id="input2" name="" value="0" onclick="setvalue2">=
+    <input type="text" id="input3" name="" value="0" onclick="setvalue3">
+    <input type="button" value="求和" onclick="getsum()" name="4"/>
+    <br/>
+    </body>
+    
+     <script type="text/javascript">
+        function setvalue1(){
+            document.getElementById("input1").value=Math.floor(Math.random()*10+1);
+            // console.log(input2.value);
+            
+        }
+        function setvalue2(){
+            document.getElementById("input2").value=Math.floor(Math.random()*10+1);
+            // console.log(input2.value);
+            
+        }
+
+        function setvalue3(){
+            //document.getElementById("input3").value=Math.floor(Math.random()*10+1);
+            // console.log(input2.value);
+            var add1=parseInt(document.getElementById("input1").value);
+            var add2=parseInt(document.getElementById("input2").value);
+            var add3=add1+add2;
+            document.getElementById("input3").value=add3;
+            
+        }
+
+        function getsum(){
+            setvalue1();
+            setvalue2();
+            setvalue3();
+        }
+
+     </script>
+</html>
